@@ -188,7 +188,7 @@ resource "azurerm_network_interface_security_group_association" "inside_security
 # }
 
 resource "volterra_known_label" "label" {
-  key       = volterra_known_label_key.key.key
+  key       = "virtual-site-terraform"
   namespace = "shared"
   value     = local.f5xc_sms_name
 }
