@@ -12,7 +12,7 @@ terraform {
   backend "azurerm" {
     # Azure Storage Account Details
     resource_group_name  = "jasmith-rg"
-    storage_account_name = "jasmithstorageacc "
+    storage_account_name = "jasmithstorageacc"
     # No need to change these values:
     container_name = "terraform-git-actions"
     key            = "terraform.tfstate"
